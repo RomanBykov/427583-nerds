@@ -34,15 +34,15 @@
     <main class="catalog-container">
       <section class="filter-section">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
-        <form class="filter-form">
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="filter-range">
            <legend>Стоимость:</legend>
             <div class="filter-range__price-controls">
-              <label for="range-min" class="min-price">от
-                <input type="text" id="range-min" value="0" size="5">
+              <label class="min-price">от
+                <input type="text" name="range-min" value="0" size="5">
               </label>
-              <label for="range-max" class="max-price">до
-                <input type="text" id="range-max" value="3000"  size="5">
+              <label class="max-price">до
+                <input type="text" name="range-max" value="3000" size="5">
               </label>
             </div>
             <div class="filter-range__range-controls">
@@ -57,15 +57,15 @@
             <legend>Сетка:</legend>
             <ul>
               <li>
-                <input type="radio" id="adaptive" checked>
+                <input type="radio" name="filter-grid" id="adaptive" checked>
                 <label for="adaptive">Адаптивная</label>
               </li>
                <li>
-                <input type="radio" id="fix">
+                <input type="radio" name="filter-grid" id="fix">
                 <label for="fix">Фиксированная</label>
               </li>
                <li>
-                <input type="radio" id="stretch">
+                <input type="radio" name="filter-grid" id="stretch">
                 <label for="stretch">Резиновая</label>
               </li>
             </ul>
@@ -74,23 +74,23 @@
             <legend>Особенности:</legend>
               <ul>
                 <li>
-                  <input type="checkbox" id="slider-feature" checked>
+                  <input type="checkbox" name="features-slider" id="slider-feature" checked>
                   <label for="slider-feature">Слайдер</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="features-feature">
+                  <input type="checkbox" name="features-advantages" id="features-feature">
                   <label for="features-feature">Блок преимуществ</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="news-feature" checked>
+                  <input type="checkbox" name="features-news" id="news-feature" checked>
                   <label for="news-feature">Новости</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="gallery-feature">
+                  <input type="checkbox" name="features-gallery" id="gallery-feature">
                   <label for="gallery-feature">Галерея</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="cart-feature">
+                  <input type="checkbox" name="features-cart" id="cart-feature">
                   <label for="cart-feature">Корзина</label>
                 </li>
               </ul>
@@ -101,13 +101,13 @@
           <legend>Сортировать:</legend>
           <ul class="filter-list">
             <li>
-              <a href="#">По цене</a>
+              <button>По цене</button>
             </li>
             <li>
-              <a href="#">По типу</a>
+              <button>По типу</button>
             </li>
             <li>
-              <a href="#">По названию</a>
+              <button>По названию</button>
             </li>
           </ul>
         </fieldset>
@@ -167,13 +167,19 @@
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul>
           <li>
-            <span class="visually-hidden">Вконтакте</span>
+            <a href="#" class="social-contacts__link">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
           </li>
           <li>
-            <span class="visually-hidden">Фейсбук</span>
+            <a href="#" class="social-contacts__link">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
           </li>
           <li>
-            <span class="visually-hidden">Инстаграм</span>
+            <a href="#" class="social-contacts__link">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
           </li>
         </ul>
         <b>Давайте дружить, это выгодно!</b>
@@ -182,15 +188,15 @@
     </footer>
     <section class="modal">
       <h2 class="visually-hidden">Обратная связь</h2>
-      <form action="post" class="modal-form">
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post" >
         <fieldset>
           <legend>Напишите нам</legend>
           <label for="modal-name">Ваше имя:</label>
-          <input type="text" id="modal-name" placeholder="Представьтесь, пожалуйста">
+          <input type="text" name="feedback-name" id="modal-name" placeholder="Представьтесь, пожалуйста" required>
           <label for="modal-email">Ваш e-mail</label>
-          <input type="email" id="modal-email" placeholder="Для отправки ответа">
+          <input type="email" name="feedback-email" id="modal-email" placeholder="Для отправки ответа" required>
           <p>Текст письма:</p>
-          <textarea>В свободной форме</textarea>
+          <textarea name="feedback-comment" required>В свободной форме</textarea>
         </fieldset>
         <input type="submit" value="Отправить">
       </form>
