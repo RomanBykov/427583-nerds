@@ -2,42 +2,47 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Студия nёrd's</title>
+    <title>Нёрдс. Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <h1 class="visually-hidden">Дизайн-студия Nёrd's. Страница каталога.</h1>
       <img src="#" width="200" height="150" alt="Логотип студии Nёrd's">
       <nav class="main-nav">
         <ul class="site-nav">
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html">Студия</a>
+          <li>
+            <a href="index.html">Студия</a>
           </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="#">Клиенты</a>
+          <li>
+            <a href="#">Клиенты</a>
           </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="#">Магазин</a>
+          <li>
+            <a class="current-page">Магазин</a>
           </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="#">Контакты</a>
+          <li>
+            <a href="#">Контакты</a>
           </li>
         </ul>
         <ul class="cart">
-          <li class="cart__item">
-            <a class="cart__link" href="#">Корзина</a>
+          <li>
+            <a href="#">Корзина</a>
           </li>
         </ul>
       </nav>
-      <h2>Магазин готовых шаблонов</h2>
+      <section class="info inner">
+        <p class="page-tagline">Магазин готовых шаблонов</p>
+      </section>
     </header>
     <main class="catalog-container">
       <section class="filter-section">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="filter-range">
-           <legend>Стоимость:</legend>
-            <div class="filter-range__price-controls">
+          <fieldset class="filter filter-range">
+           <legend class="filter-title">Стоимость:</legend>
+            <div class="price-controls">
               <label class="min-price">от
                 <input type="text" name="range-min" value="0" size="5">
               </label>
@@ -45,17 +50,17 @@
                 <input type="text" name="range-max" value="3000" size="5">
               </label>
             </div>
-            <div class="filter-range__range-controls">
-              <div class="filter-range__scale">
-                <div class="filter-range__bar"></div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
               </div>
-              <div class="filter-range__range-toggle filter-range__range-toggle--min"></div>
-              <div class="filter-range__range-toggle filter-range__range-toggle--max"></div>
+              <div class="range-toggle range-toggle--min"></div>
+              <div class="range-toggle range-toggle--max"></div>
             </div>
           </fieldset>
-          <fieldset>
-            <legend>Сетка:</legend>
-            <ul>
+          <fieldset class="filter">
+            <legend class="filter-title">Сетка:</legend>
+            <ul class="filter-list">
               <li>
                 <input type="radio" name="filter-grid" id="adaptive" checked>
                 <label for="adaptive">Адаптивная</label>
@@ -70,9 +75,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Особенности:</legend>
-              <ul>
+          <fieldset class="filter">
+            <legend class="filter-title">Особенности:</legend>
+              <ul class="filter-list">
                 <li>
                   <input type="checkbox" name="features-slider" id="slider-feature" checked>
                   <label for="slider-feature">Слайдер</label>
@@ -97,24 +102,30 @@
           </fieldset>
           <button type="submit" class="filter-button">Показать</button>
         </form>
-        <fieldset>
-          <legend>Сортировать:</legend>
+        <fieldset class="filter">
+          <legend class="filter-title">Сортировать:</legend>
           <ul class="filter-list">
             <li>
-              <button>По цене</button>
+              <a href="#" class="filter-link filter-active">По цене</a>
             </li>
             <li>
-              <button>По типу</button>
+              <a href="#" class="filter-link">По типу</a>
             </li>
             <li>
-              <button>По названию</button>
+              <a href="#" class="filter-link">По названию</a>
+            </li>
+            <li>
+              <a href="#"><span class="visually-hidden">По возрастанию</span></a>
+            </li>
+            <li>
+              <a href="#"><span class="visually-hidden">По убыванию</span></a>
             </li>
           </ul>
         </fieldset>
       </section>
       <section class="work-examples">
         <h2 class="visually-hidden">Шаблоны на примерах наших работ</h2>
-        <ul>
+        <ul class="work-examples-list">
           <li>
             <img src="img/catalog-sedona.jpg" width="360" height="576" alt="Седона">
           </li>
@@ -135,9 +146,9 @@
           </li>
         </ul>
       </section>
-      <ul class="breadcrumbs">
+      <ul class="paginator">
         <li>
-          <a href="#">1</a>
+          <a href="#" class="active-page">1</a>
         </li>
         <li>
           <a href="#">2</a>
@@ -153,31 +164,26 @@
     <footer>
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <dl>
-          <dt class="contacts-title">Nёrds design studio</dt>
-          <dd>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</dd>
-          <dd>тел. +7 (812) 275-75-75</dd>
-          <dd>
-            <a href="#">Напишите нам</a>
-          </dd>
-        </dl>
-        <img src="img/map.jpg" width="1440" height="416" alt="Как добраться">
+        <b>Nёrds design studio</b>
+        <p class="contacts-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>тел. +7 (812) 275-75-75</p>
+        <a class="link" href="#">Напишите нам</a>
+        <img src="img/map.jpg" width="1440" height="416" alt="Как нас найти: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       </section>
       <section class="social-contacts">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul>
+        <ul class="social-contacts-list">
           <li>
-            <a href="#" class="social-contacts__link">
+            <a href="#">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li>
-            <a href="#" class="social-contacts__link">
+            <a href="#">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li>
-            <a href="#" class="social-contacts__link">
+            <a href="#">
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
@@ -189,16 +195,16 @@
     <section class="modal">
       <h2 class="visually-hidden">Обратная связь</h2>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post" >
-        <fieldset>
-          <legend>Напишите нам</legend>
-          <label for="modal-name">Ваше имя:</label>
-          <input type="text" name="feedback-name" id="modal-name" placeholder="Представьтесь, пожалуйста" required>
-          <label for="modal-email">Ваш e-mail</label>
+        <fieldset class="modal-fieldset">
+          <legend class="block-header">Напишите нам</legend>
+          <label class="field-header" for="modal-name">Ваше имя:</label>
+          <input name="feedback-name" id="modal-name" placeholder="Представьтесь, пожалуйста" required>
+          <label class="field-header" for="modal-email">Ваш e-mail</label>
           <input type="email" name="feedback-email" id="modal-email" placeholder="Для отправки ответа" required>
-          <p>Текст письма:</p>
-          <textarea name="feedback-comment" required>В свободной форме</textarea>
+          <p class="field-header">Текст письма:</p>
+          <textarea class="contacts-text" name="feedback-comment" required>В свободной форме</textarea>
         </fieldset>
-        <input type="submit" value="Отправить">
+        <input type="submit" class="link submit-button" value="Отправить">
       </form>
     </section>
   </body>

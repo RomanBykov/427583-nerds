@@ -1,0 +1,281 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-nav {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.site-nav li,
+.cart li {
+  list-style: none;
+}
+
+.site-nav a,
+.cart a {
+  color: #000000;
+}
+
+.site-nav a:hover,
+.site-nav a:focus,
+.cart a:hover,
+.cart a:focus {
+  color: #fb565a;
+}
+
+.site-nav a:active,
+.cart a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.current-page {
+  color: #000000;
+  border-bottom: 2px solid #fb565a;
+}
+
+.page-tagline {
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.link {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+
+  background-color: #fb565a;
+}
+
+.link-green {
+  background-color: #00ca74;
+}
+
+.link-yellow {
+  background-color: #efc84a;
+}
+
+.link:hover,
+.link:focus {
+  background-color: #e74246;
+}
+
+.link:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.link-green:hover,
+.link-green:focus {
+  background-color: #00bc6c;
+}
+
+.link-green:active {
+  background-color: #00aa62;
+}
+
+.link-yellow:hover,
+.link-yellow:focus {
+  background-color: #eab534;
+}
+
+.link-yellow:active {
+  background-color: #e5a722;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.features-list-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.block-header {
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.description-list dt {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.description-list-percent {
+  font-size: 45px;
+  line-height: 56px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.work-list {
+  list-style: none;
+}
+
+.contacts b {
+  font-size: 8px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.contacts-text {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.social-contacts-list {
+  list-style: none;
+}
+
+.social-contacts b {
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.social-contacts p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+
+.modal-input {
+  color: rgba(68, 68 , 68, 0.5);
+
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+  outline-color: #e1e1e1;
+}
+
+.modal-input:hover {
+  outline-color: #b4b9bb;
+  border-color: #b4b9bb;
+}
+
+.modal-input:focus {
+  color: #444444;
+
+  border-color: #000000;
+}
+
+.comment-text {
+  color: rgba(68, 68 , 68, 0.5);
+}
+
+.field-header {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.submit-button {
+  border: none;
+}
+
+.filter {
+  border: none;
+}
+
+.filter-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.filter-link {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+
+  opacity: 0.3;
+}
+
+.filter-link:hover,
+.filter-link:focus {
+  opacity: 0.6;
+}
+
+.filter-link:active,
+.filter-active {
+  opacity: 1;
+}
+
+.inner-page {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.filter-list {
+  list-style: none;
+}
+
+.filter-button,
+.paginator a {
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+
+  border: none;
+  background-color: #eeeeee;
+}
+
+.filter-button:hover,
+.filter-button:focus,
+.paginator a:hover,
+.paginator a:focus {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active,
+.paginator a:active {
+  box-shadow: 0 -3px 0 #bfbfbf;
+  outline: none;
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: #d5d5d5;
+}
+
+.paginator .active-page {
+  background-color: transparent;
+  box-shadow: 0 0 0 3px #dbdbdb;
+  border-radius: 1px;
+}
+
+.work-examples-list,
+.paginator {
+  list-style: none;
+}
