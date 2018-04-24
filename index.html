@@ -5,7 +5,7 @@
     <title>Нёрдс. Главная</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-mini.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -87,9 +87,9 @@
       </div>
     </header>
     <main class="main-container container">
-      <section class="features">
+      <section class="services">
         <h2 class="visually-hidden">Наши услуги</h2>
-        <ul class="features-list">
+        <ul class="services-list">
           <li>
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
@@ -107,19 +107,19 @@
           </li>
         </ul>
       </section>
-      <section class="description">
+      <section class="about-us">
         <h2 class="visually-hidden">О нас</h2>
-        <div class="description-text">
-          <p class="description-header">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <div class="about-us-text">
+          <p class="about-us-header">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <dl class="description-list">
-            <dt class="description-list__title">Выполняем заказы на разработку:</dt>
+          <dl class="about-us-list">
+            <dt class="about-us-list__title">Выполняем заказы на разработку:</dt>
             <dd>Веб-сайтов любой сложности</dd>
             <dd>Мобильных приложений для iOS и Android</dd>
             <dd>Слайдшоу и видео для корпоративных презентаций</dd>
           </dl>
         </div>
-        <div class="description-stats">
+        <div class="about-us-stats">
           <dl class="stats-list">
             <dt>С 2004 года любим точность во всем:</dt>
             <dd>
@@ -137,24 +137,26 @@
           </dl>
         </div>
       </section>
-      <section class="performed-works">
+      <section class="done-works">
         <h2 class="visually-hidden">Ссылки на уже выполненные работы</h2>
-        <ul class="work-list">
+        <ul class="done-works-list">
           <li>
-            <a href="https://htmlacademy.ru/intensive/htmlcss" class="link-to-academy" tabindex="0"><span class="visually-hidden">HTML Academy</span></a>
+            <a class="link-academy" href="https://htmlacademy.ru/intensive/htmlcss" tabindex="0">
+              <span class="visually-hidden">HTML Academy</span>
+            </a>
           </li>
           <li>
-            <a href="#" class="link-to-barbershop" tabindex="0">
+            <a class="link-barbershop" href="#" tabindex="0">
               <span class="visually-hidden">Barbershop Borodinski</span>
             </a>
           </li>
           <li>
-            <a href="#" class="link-to-pink" tabindex="0">
+            <a class="link-pink" href="#" tabindex="0">
               <span class="visually-hidden">Pink</span>
             </a>
           </li>
           <li>
-            <a href="#" class="link-to-mishka" tabindex="0">
+            <a class="link-mishka" href="#" tabindex="0">
               <span class="visually-hidden">Mishka</span>
             </a>
           </li>
@@ -172,33 +174,31 @@
         <button class="link contacts-btn">Напишите нам</button>
       </section>
       <div class="modal-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s
-        0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v
-        1524218232719" width="1440" height="416" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1524218232719" width="1440" height="416" allowfullscreen></iframe>
         <p>
           <img src="img/map.jpg" width="1440" height="416" alt="Как нас найти: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </p>
       </div>
-      <section class="social-contacts container">
+      <section class="social container">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="social-contacts-list">
+        <ul class="social-list">
           <li>
-            <a href="#" class="social-vk">
+            <a class="social-vk" href="#">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li>
-            <a href="#" class="social-fb">
+            <a class="social-fb" href="#">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li>
-            <a href="#" class="social-insta">
+            <a class="social-insta" href="#">
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
         </ul>
-        <div class="social-contacts-offer">
+        <div class="social-offer">
           <p>
             <b>Давайте дружить, это выгодно!</b>
           </p>
@@ -211,7 +211,9 @@
           <fieldset class="modal-fieldset">
             <div class="modal-wrap">
               <p class="modal-header">Напишите нам</p>
-              <button type="button" class="modal-close"><span class="visually-hidden">Закрыть форму обратной связи</span></button>
+              <button class="modal-close" type="button">
+                <span class="visually-hidden">Закрыть форму обратной связи</span>
+              </button>
             </div>
             <div class="modal-row-wrapper">
               <div class="modal-input-wrapper">
@@ -226,10 +228,10 @@
             <p class="field-header">Текст письма:</p>
             <textarea class="modal-input comment-text" name="feedback-comment" required>В свободной форме</textarea>
           </fieldset>
-          <input type="submit" class="link submit-button" value="Отправить">
+          <input class="link submit-button" type="submit" value="Отправить">
         </form>
       </section>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script-mini.js"></script>
   </body>
 </html>

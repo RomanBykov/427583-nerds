@@ -5,7 +5,7 @@
     <title>Нёрдс. Каталог</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-mini.css" rel="stylesheet">
   </head>
   <body class="inner-page">
     <header class="main-header inner-header">
@@ -68,9 +68,7 @@
           <legend class="filter-title price-legend">Стоимость:</legend>
             <div class="price-controls">
               <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
+                <div class="scale"></div>
                 <div class="range-toggle range-toggle-min"></div>
                 <div class="range-toggle range-toggle-max"></div>
               </div>
@@ -123,21 +121,21 @@
                 </li>
               </ul>
           </fieldset>
-          <button type="submit" class="button filter-button">Показать</button>
+          <button class="button filter-button" type="submit">Показать</button>
         </form>
       </section>
-      <section class="work-examples">
-        <div class="filter-sort">
+      <section class="catalog">
+        <div class="filter-sort-block">
           <p class="filter-title sort-title">Сортировать:</p>
           <ul class="filter-list sort-types">
             <li class="sort-type">
-              <a href="#" class="filter-link sort-active">По цене</a>
+              <a class="sort-link sort-active" href="#">По цене</a>
             </li>
             <li class="sort-type">
-              <a href="#" class="filter-link">По типу</a>
+              <a class="sort-link" href="#">По типу</a>
             </li>
             <li class="sort-type">
-              <a href="#" class="filter-link">По названию</a>
+              <a class="sort-link" href="#">По названию</a>
             </li>
             <li class="sort-to sort-to-down sort-active" tabindex="0">
               <a href="#">
@@ -152,65 +150,65 @@
           </ul>
         </div>
         <h2 class="visually-hidden">Шаблоны на примерах наших работ</h2>
-        <ul class="work-examples-list">
-          <li class="examples-list-item" tabindex="0">
+        <ul class="catalog-list">
+          <li class="catalog-item" tabindex="0">
             <div class="border-circle"></div>
-            <img src="img/catalog-sedona.jpg" width="358" height="574" alt="Седона">
-            <div class="example-description" tabindex="0">
+            <img src="img/catalog-sedona.jpg" width="360" height="576" alt="Седона">
+            <div class="catalog-item-info" tabindex="0">
               <a href="#">Sedona</a>
               <p>Информационный сайт для туристов</p>
-              <button type="button" class="example-price-btn">9 900 руб.</button>
+              <button class="catalog-price-btn" type="button">9 900 руб.</button>
             </div>
           </li>
-          <li class="examples-list-item" tabindex="0">
+          <li class="catalog-item" tabindex="0">
             <div class="border-circle"></div>
-            <img src="img/catalog-pink.jpg" width="358" height="574" alt="Пинк">
-            <div class="example-description" tabindex="0">
+            <img src="img/catalog-pink.jpg" width="360" height="576" alt="Пинк">
+            <div class="catalog-item-info" tabindex="0">
               <a href="#">Pink App</a>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <button type="button" class="example-price-btn">9 900 руб.</button>
+              <button class="catalog-price-btn" type="button">9 900 руб.</button>
             </div>
           </li>
-          <li class="examples-list-item" tabindex="0">
+          <li class="catalog-item" tabindex="0">
             <div class="border-circle"></div>
-            <img src="img/catalog-barbershop.jpg" width="358" height="574" alt="Барбершоп">
-            <div class="example-description" tabindex="0">
+            <img src="img/catalog-barbershop.jpg" width="360" height="576" alt="Барбершоп">
+            <div class="catalog-item-info" tabindex="0">
               <a href="#">Barbershop</a>
               <p>Сайт салоны красоты. Для мужчин, да.</p>
-              <button type="button" class="example-price-btn">9 900 руб.</button>
+              <button class="catalog-price-btn" type="button">9 900 руб.</button>
             </div>
           </li>
-          <li class="examples-list-item" tabindex="0">
+          <li class="catalog-item" tabindex="0">
             <div class="border-circle"></div>
-            <img src="img/catalog-mishka.jpg" width="358" height="574" alt="Мишка">
-            <div class="example-description" tabindex="0">
+            <img src="img/catalog-mishka.jpg" width="360" height="576" alt="Мишка">
+            <div class="catalog-item-info" tabindex="0">
               <a href="#">Mishka</a>
               <p>Интернет-магазин вязаных игрушек</p>
-              <button type="button" class="example-price-btn">9 900 руб.</button>
+              <button class="catalog-price-btn" type="button">9 900 руб.</button>
             </div>
           </li>
-          <li class="examples-list-item" tabindex="0">
+          <li class="catalog-item" tabindex="0">
             <div class="border-circle"></div>
-            <img src="img/catalog-aplus.jpg" width="358" height="574" alt="А-Плюс">
-            <div class="example-description" tabindex="0">
+            <img src="img/catalog-aplus.jpg" width="360" height="576" alt="А-Плюс">
+            <div class="catalog-item-info" tabindex="0">
               <a href="#">A Plus</a>
               <p>Лендинг курсов повышения квалификации</p>
-              <button type="button" class="example-price-btn">9 900 руб.</button>
+              <button class="catalog-price-btn" type="button">9 900 руб.</button>
             </div>
           </li>
-          <li class="examples-list-item" tabindex="0">
+          <li class="catalog-item" tabindex="0">
             <div class="border-circle"></div>
-            <img src="img/catalog-kvast.jpg" width="358" height="574" alt="Кваст">
-            <div class="example-description" tabindex="0">
+            <img src="img/catalog-kvast.jpg" width="360" height="576" alt="Кваст">
+            <div class="catalog-item-info" tabindex="0">
               <a href="#">Кваст</a>
               <p>Промо-сайт производителя крафтового кваса</p>
-              <button type="button" class="example-price-btn">9 900 руб.</button>
+              <button class="catalog-price-btn" type="button">9 900 руб.</button>
             </div>
           </li>
         </ul>
         <ul class="paginator">
           <li>
-            <a href="#" class="active-page">1</a>
+            <a class="active-page" href="#">1</a>
           </li>
           <li>
             <a href="#">2</a>
@@ -219,7 +217,7 @@
             <a href="#">3</a>
           </li>
           <li>
-            <a href="#" class="paginator-next-page">Следующая</a>
+            <a class="paginator-next-page" href="#">Следующая</a>
           </li>
         </ul>
       </section>
@@ -235,33 +233,31 @@
         <button class="link contacts-btn">Напишите нам</button>
       </section>
       <div class="modal-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s
-        0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v
-        1524218232719" width="1440" height="416" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1524218232719" width="1440" height="416" allowfullscreen></iframe>
         <p>
           <img src="img/map.jpg" width="1440" height="416" alt="Как нас найти: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </p>
       </div>
-      <section class="social-contacts container">
+      <section class="social container">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="social-contacts-list">
+        <ul class="social-list">
           <li>
-            <a href="#" class="social-vk">
+            <a class="social-vk" href="#">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li>
-            <a href="#" class="social-fb">
+            <a class="social-fb" href="#">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li>
-            <a href="#" class="social-insta">
+            <a class="social-insta" href="#">
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
         </ul>
-        <div class="social-contacts-offer">
+        <div class="social-offer">
           <p>
             <b>Давайте дружить, это выгодно!</b>
           </p>
@@ -274,7 +270,9 @@
           <fieldset class="modal-fieldset">
             <div class="modal-wrap">
               <p class="modal-header">Напишите нам</p>
-              <button type="button" class="modal-close"><span class="visually-hidden">Закрыть форму обратной связи</span></button>
+              <button class="modal-close" type="button">
+                <span class="visually-hidden">Закрыть форму обратной связи</span>
+              </button>
             </div>
             <div class="modal-row-wrapper">
               <div class="modal-input-wrapper">
@@ -289,10 +287,10 @@
             <p class="field-header">Текст письма:</p>
             <textarea class="modal-input comment-text" name="feedback-comment" required>В свободной форме</textarea>
           </fieldset>
-          <input type="submit" class="link submit-button" value="Отправить">
+          <input class="link submit-button" type="submit" value="Отправить">
         </form>
       </section>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script-mini.js"></script>
   </body>
 </html>
